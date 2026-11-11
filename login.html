@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LED Pedestre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <a class="brand" href="index.html">LED Pedestre</a>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="cadastro.html">Cadastrar</a>
+    </nav>
+</header>
+
+<main class="auth-wrap">
+
+    <section class="auth-card">
+
+        <h1>Entrar na plataforma</h1>
+        <p>Acesse sua conta.</p>
+
+        <form id="login-form">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" required minlength="8">
+
+            <button class="button primary full" type="submit">
+                Entrar
+            </button>
+
+            <p id="form-message"></p>
+
+        </form>
+
+        <p>
+            Não tem conta?
+            <a href="cadastro.html">Cadastre-se</a>
+        </p>
+
+    </section>
+
+</main>
+
+<script src="js/autenticacao.js"></script>
+</body>
+</html>

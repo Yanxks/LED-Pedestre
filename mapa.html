@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mapa - LED Pedestre</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <a class="brand" href="index.html">✦ LED Pedestre</a>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="registrar-ponto.html">Registrar ponto</a>
+        <a href="login.html">Entrar</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <h1>Mapa de travessias</h1>
+    <p>Consulte os pontos cadastrados na cidade.</p>
+
+    <label for="filter-status">Filtrar pontos:</label>
+
+    <select id="filter-status">
+        <option value="todos">Todos</option>
+        <option value="com">Com LED</option>
+        <option value="sem">Sem LED</option>
+        <option value="verificar">A verificar</option>
+    </select>
+
+    <span id="point-count"></span>
+
+    <div id="map" class="map"></div>
+
+    <div class="legend">
+        🟢 Com LED
+        🔴 Sem LED
+        🟡 A verificar
+    </div>
+
+</main>
+
+<footer>LED Pedestre - Mobilidade urbana</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

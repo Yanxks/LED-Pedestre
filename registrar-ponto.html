@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registrar ponto</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <a class="brand" href="index.html">LED Pedestre</a>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="mapa.html">Mapa</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <h1>Registrar travessia</h1>
+
+    <form id="point-form">
+
+        <label for="address">Endereço</label>
+        <input type="text" id="address" required>
+
+        <label for="status">Situação</label>
+        <select id="status" required>
+            <option value="">Selecione</option>
+            <option value="com">Possui LED</option>
+            <option value="sem">Não possui LED</option>
+            <option value="verificar">A verificar</option>
+        </select>
+
+        <label for="notes">Observações</label>
+        <textarea id="notes"></textarea>
+
+        <p>Clique no mapa para escolher a localização:</p>
+
+        <div id="pick-map" class="map"></div>
+
+        <p id="coordinates"></p>
+
+        <button class="button primary" type="submit">
+            Salvar ponto
+        </button>
+
+        <p id="form-message"></p>
+
+    </form>
+
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/registro-ponto.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
